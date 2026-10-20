@@ -1,0 +1,25 @@
+# secrets
+.env
+.env.*
+!.env.example
+secrets/*
+!secrets/.gitkeep
+*service-account*.json
+firebase-adminsdk*.json
+
+# backend
+backend/target/
+*.class
+
+# frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# IDE / OS
+.idea/
+.vscode/
+*.iml
+.DS_Store

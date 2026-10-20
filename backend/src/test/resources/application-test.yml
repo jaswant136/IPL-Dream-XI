@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:ipltest;MODE=PostgreSQL;DB_CLOSE_DELAY=-1;DATABASE_TO_LOWER=TRUE;DEFAULT_NULL_ORDERING=HIGH
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+
+app:
+  firebase:
+    # Test-only: a TokenVerifier test bean replaces the Firebase verifier. Production never sets this.
+    enabled: false
+  seed:
+    enabled: false
+  rate-limit:
+    start-draft-per-minute: 1000
+
+logging:
+  level:
+    root: WARN
+    com.ipldraftclub: INFO
