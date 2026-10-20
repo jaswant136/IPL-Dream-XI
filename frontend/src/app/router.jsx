@@ -15,6 +15,7 @@ import LeaderboardPage from '../pages/LeaderboardPage'
 import ProfilePage from '../pages/ProfilePage'
 import SharedDraftPage from '../pages/SharedDraftPage'
 import NotFoundPage from '../pages/NotFoundPage'
+import CricketSeasonPage from '../pages/CricketSeasonPage'
 
 export const routes = [
   {
@@ -36,6 +37,9 @@ export const routes = [
           { path: '/drafts', element: <MyDraftsPage /> },
           { path: '/drafts/:draftId/result', element: <DraftResultPage /> },
           { path: '/profile', element: <ProfilePage /> },
+
+          // Cricket season results
+          { path: '/cricket-season', element: <CricketSeasonPage /> },
         ],
       },
       { path: '*', element: <NotFoundPage /> },
